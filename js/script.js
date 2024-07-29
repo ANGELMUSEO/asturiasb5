@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $(".maintitle").hide()
+    $(".aparecer").hide()
     $(".maintitle").delay(1000).fadeIn(2000)
     $(".paraiso").hide()
     $(".paraiso").delay(1000).fadeIn(2500)
