@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    
+
+    <div class="container-fluid sticky-top bg-dark">
+        <!--nueva barra con boton movil-->
+        <div class="row">            
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fw-bold">
+                <div class="container-fluid">
+                 <a class="navbar-brand" href="#"><img src="img/logo.png" width="60px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="mynavbar">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-dark text-white dropdown-toggle fw-bold" data-bs-toggle="dropdown">
+                          DESCUBRE
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="pag/pagina2.html">CULTURA</a></li>
+                          <li><a class="dropdown-item" href="pag/pagina3.html">INFORMACION</a></li>
+                          <li><a class="dropdown-item" href="pag/pagina4.html">Gastronomia</a></li>
+                        </ul>
+                      </div>
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item text-white">
+                        <a class="nav-link" href="#">NATURALEZA</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">DEPORTE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">BIENESTAR</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="text" placeholder="Search">
+                      <button class="btn btn-primary" type="button">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+
+
+            <!--
+            <div class="col-1">
+                <a class="navbar-bran" href="#"><img src="img/logo.png" class="img-fluid mt-2"></a>
+            </div>
+          
+
+                menu bootstrap 5 nuevo pero sin boton
+                <div class="col-11 my-2">
+                    <div class="btn-group mx-1">
+                        <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown">Descubre</button>
+                        <div class="dropdown-menu">
+                           
+                            <a href="pag/pagina2.html" class="dropdown-item text-dark">Naturaleza</a>
+                            <a href="pag/pagina3.html" class="dropdown-item text-dark">Cultura</a>
+                            <button class="dropdown-item">Gastronomía</button>
+                            <button class="dropdown-item">Costas y Pueblos Marineros</button>
+                            <button class="dropdown-item">Ciudades de Asturias</button>
+                            <button class="dropdown-item">Turismo Rural</button>
+                        </div>
+                    </div>
+
+                    <!--para añadir submenus a cada menu
+                    <div class="btn-group mx-1">
+                        <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">Organiza tu viaje</button>
+                        <div class="dropdown-menu">
+                          
+                        </div>
+                    </div>
+                    <div class="btn-group mx-1">
+                        <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">Agenda</button>
+                        <div class="dropdown-menu">
+                          
+                        </div>
+                    </div>
+                    <div class="btn-group mx-1">
+                        <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">Blog</button>
+                        <div class="dropdown-menu">
+                          
+                        </div>
+                    </div>
+                   
+                    <button type="button " class="btn text-white mx-1 ">Organiza tu viaje</button>
+                    <button type="button " class="btn text-white mx-1 ">Agenda</button>
+                    <button type="button " class="btn text-white mx-1 ">Blog</button>
+                    <button type="button" class="btn text-white mx-1">Profesionales</button>
+                </div>
+                
+            -->
+
+
+
+<!-- antiguo de referencia
+                <div class="btn-group mx-1">
+                    <button type="button" class="btn dropdown-toggle text-white float-left" data-toggle="dropdown">Descubre</button>
+                    <div class="dropdown-menu">
+                        <button type="button" class="dropdown-item"><a href="pag/pagina2.html" class="text-dark">Naturaleza</a></button>
+                        <button type="button" class="dropdown-item"><a href="pag/pagina3.html" class="text-dark">Cultura</a></button>
+                        <button type="button" class="dropdown-item">Gastronomía</button>
+                        <button type="button" class="dropdown-item">Costas y Pueblos Marineros</button>
+                        <button type="button" class="dropdown-item">Ciudades de Asturias</button>
+                        <button type="button" class="dropdown-item">Turismo Rural</button>
+                    </div>
+                </div>
+
+                <button type="button float-left" class="btn text-white mx-1 dropdown-toggle">Organiza tu viaje</button>
+                <button type="button float-left" class="btn text-white mx-1 dropdown-toggle">Agenda</button>
+                <button type="button float-left" class="btn text-white mx-1 dropdown-toggle">Blog</button>
+                <button type="button float-left" class="btn text-white mx-1">Profesionales</button>
+-->
+
+             
+        </div>
+    </div>
+    <div class="container-fluid">
+
+         <!-- Carousel nuevo-->
+        <div class="row">
+
+           
+                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                            <!-- Indicadores parte abajo-->
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                            </div>
+                        
+                            <!-- carrusel -->
+                            <div class="carousel-inner">
+                                 <div class="carousel-item active">
+                                <a href="pag/pagina2.html"><img src="img/asturias-puente-de-cangas-de-onis_58cbd78f_2000x1333.jpg" class="img-fluid" alt=""></a>
+                  
+                                </div>
+                            <div class="carousel-item">
+                                <img src="img/home-rural.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/3.jpg" class="img-fluid" alt="">
+                            </div>
+                            </div>
+                        
+                            <!--controles-iconos -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+
+
+
+           
+
+           <!-- <button type="button" class="btn btn-danger text-white boton">Reservas Online</button>-->
+        </div>
+       
+       <!--titulo adapatado movil y ordenador-->
+        <div class="row ">
+            <div class="col-12 d-none d-md-block">
+                <p id="ast" class="maintitle">ASTURIAS</p>
+                <p class="paraiso">  Vuelve al Paraíso  </p>
+            </div>
+          
+        </div>
+        <div class="row ">
+            <div class="col-12 d-md-none">
+                <p id="ast" class="maintitleMovil">ASTURIAS</p>
+                <p class="paraisoMovil">  Vuelve al Paraíso  </p>
+            </div>
+        </div>
+    </div>
+
+
+   
+    <div class="container my-2">
+        <div class="row p-4 d-none d-md-block">
+           
+        </div>
+        <div class="row">
+            <div class="col-md-6 p-4">
+                <h2 class="text-success mb-3 display-3 mb-4 text-center">Vuelve al Paraíso</h2>
+                <p class="text-justify d-md-none">Por tierra, mar y aire. No importa la puerta de entrada. La visión orgullosa de la escarpada Cordillera Cantábrica, 
+                    del perfil ondulante de sus verdes valles y del abrupto perfil de su costa que cae al Cantábrico, un mar de intenso 
+                    azul, cautiva antes incluso de poner un pie en Asturias. Es solo un aperitivo de una experiencia para la que se 
+                    necesitan los cinco sentidos. Sin ellos no se puede saborear su gastronomía, deslumbrarse con la arquitectura, 
+                    respirar su naturaleza, escuchar el latido de su corazón urbano o disfrutar la hospitalidad.</p>
+                <p class="text-justify fs-5 d-none d-md-block">Por tierra, mar y aire. No importa la puerta de entrada. La visión orgullosa de la escarpada Cordillera Cantábrica, 
+                    del perfil ondulante de sus verdes valles y del abrupto perfil de su costa que cae al Cantábrico, un mar de intenso 
+                    azul, cautiva antes incluso de poner un pie en Asturias. Es solo un aperitivo de una experiencia para la que se 
+                    necesitan los cinco sentidos. Sin ellos no se puede saborear su gastronomía, deslumbrarse con la arquitectura, 
+                    respirar su naturaleza, escuchar el latido de su corazón urbano o disfrutar la hospitalidad.</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5  border-top border-bottom border-success border-2 p-4 ">
+               
+                <p class="text-success fst-italic lead text-center display-6">Asturias es honesta, auténtica, vital, respetuosa con el pasado y con el presente, servicial, valiente, acogedora, moderna y cosmopolita.</p>
+               
+            </div>
+        </div>
+       
+        <!--zona dos imagenes largas-->
+        <div class="row mt-4">
+            <img src="img/covid 19.jpg" class="my-4 img-fluid imagenCovid img-thumbnail " alt="">
+            
+        </div>
+        <div class="row">
+            <img src="img/bienestar.jpg" class="my-4 d-none d-md-block img-fluid imagenBienestar img-thumbnail" alt="">
+            <!--imagenBienestar está sin nada todavía-->
+        </div>
+      
+    </div>
+
+<!-- zona post imagenes-->
+   
+
+    <div class="container border-top border-success border-2">
+        <div class="row pinchar">
+            <div class="d-none d-md-block col-2"></div>
+            <div class="col-12 col-md-8">
+                <h2 class="text-center mt-5 display-6 fw-bold text-success ">Asturias en clave de Bienestar</h2>
+                <p class="text-justify my-4" style="text-align:justify ;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iste. Voluptatum, temporibus magnam molestias expedita, quae praesentium, 
+                    iste modi blanditiis animi voluptates quis maxime facilis vero omnis nemo cupiditate rerum. Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Expedita accusantium molestiae deleniti cumque necessitatibus odit magnam, reprehenderit tempore culpa, distinctio
+                     quod voluptatem dolores et, laborum placeat animi reiciendis nesciunt architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Velit eveniet nostrum minus excepturi harum, consequuntur tempora? Provident quae aperiam repudiandae, quod autem, culpa tempora eaque alias
+                      porro cum perferendis fuga.</p>
+            </div>
+            <div class=" d-none d-md-block col-2"></div>
+        </div>
+        <div class="row aparecer ">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h2 class="text-center mt-5 ">Asturias con nueva información</h2>
+                <p class="text-justify my-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iste. Voluptatum, temporibus magnam molestias expedita, quae praesentium, 
+                    iste modi blanditiis animi voluptates quis maxime facilis vero omnis nemo cupiditate rerum. Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Expedita accusantium molestiae deleniti cumque necessitatibus odit magnam, reprehenderit tempore culpa, distinctio
+                     quod voluptatem dolores et, laborum placeat animi reiciendis nesciunt architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Velit eveniet nostrum minus excepturi harum, consequuntur tempora? Provident quae aperiam repudiandae, quod autem, culpa tempora eaque alias
+                      porro cum perferendis fuga.</p>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="row">
+            <img src="img/banner12.jpg" class="w-100" alt="">
+        </div>
+    </div>
+ <!--CONTINUAR POR AQUI-->
+<!--migas pan antiguas
+    <div class="container-fluid fixed-bottom mt-2 bg-success p-2">
+        <div class="row">
+
+        <div class="d-none d-md-block col-md-6">
+            <ul class="breadcrumb float-left ">
+                <li class="breadcrumb-item">
+                    <a href="pag/pagina3.html">MONTAÑA</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">MAR</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="pag/pagina4.html">PRERROMÁNICO</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">PUEBLOS</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="pag/pagina2.html">RUTAS</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <ul class="pagination pagination-sm float-right">
+                <li class="page-item disabled"><a href="#" class="page-link">PREV</a></li>
+                <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                <li class="page-item "><a href="pag/pagina2.html" class="page-link">2</a></li>
+                <li class="page-item "><a href="pag/pagina3.html" class="page-link">3</a></li>
+                <li class="page-item "><a href="pag/pagina2.html" class="page-link">NEXT</a></li>
+            </ul>
+        </div>
+    
+        
+
+        </div>
+    </div>
+    
+-->
+        
+
+</body>
+</html>

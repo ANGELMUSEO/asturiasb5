@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'maintitle';
+    src: url(AveriaSerifLibre-Bold.ttf);
+}
+@font-face {
+    font-family: 'paraiso';
+    src: url(TheNautigal-Bold.ttf);
+}
+.maintitle{
+    font-family: 'maintitle';
+    color: white;
+    font-size: 70pt;
+    z-index: 60;
+    position: absolute;
+    top: 200px;
+    left: 37%;
+}
+
+.maintitleMovil{
+  font-family: 'maintitle';
+  color: white;
+  font-size: 40pt;
+  z-index: 60;
+  position: absolute;
+  top: 80px;
+  left: 27%;
+}
+
+
+.paraiso{
+    font-family: 'paraiso';
+    color: white;
+    font-size: 45pt;
+    text-decoration: overline;
+    position: absolute;
+    top: 330px;
+    left: 41%;
+    letter-spacing: 2px;
+}
+.paraisoMovil{
+  font-family: 'paraiso';
+  color: white;
+  font-size: 25pt;
+  text-decoration: overline;
+  position: absolute;
+  top: 140px;
+  left: 31%;
+  letter-spacing: 2px;
+}
+.boton{
+    position: absolute;
+    top: 800px;
+    right:50px;
+}
+
+/* nuevo solo giro
+
+
+.rotateY {
+    transform: rotateY(360deg);
+}
+*/
+
+/* giro imagen*/
+.imagenCovid {
+    transition: transform 2s;
+}
+
+
+.rotateY {
+    transform: rotateY(180deg);
+}
+
+
+
+/*rota con active la card de pagina 3*/
+.cardPar {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.cardPar:hover {
+    transform: rotateY(180deg);
+    opacity: 0.5;
+}
+
+/*efecto entrada sin scroll con un retardo
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft2 {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .cardEspecial1 {
+    animation: slideInLeft 1s 1s ease-out;
+  }
+  .cardEspecial2 {
+    animation: slideInLeft2 1s 1s ease-out;
+  }
+
+  */
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft2 {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .cardEspecial1 {
+    opacity: 0; /* Ocultar inicialmente */
+    transform: translateX(-100%); /* Posicionar fuera de la vista inicialmente */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  .cardEspecial1.show {
+    opacity: 1; /* Mostrar cuando se agrega la clase 'show' */
+    transform: translateX(0); /* Animar a su posición original */
+  }
+  
+  .cardEspecial2 {
+    opacity: 0; /* Ocultar inicialmente */
+    transform: translateX(100%); /* Posicionar fuera de la vista inicialmente */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  .cardEspecial2.show {
+    opacity: 1; /* Mostrar cuando se agrega la clase 'show' */
+    transform: translateX(0); /* Animar a su posición original */
+  }
+
+
+  /*ocultar la clase repetida*/
+  .aparecer {
+    display: none;
+}

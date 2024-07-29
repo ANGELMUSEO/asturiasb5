@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+    
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        AOS.init({
+        offset: 200, // distancia desde la parte superior de la ventana
+        duration: 1000, // duración de la animación en milisegundos
+        easing: 'ease-out', // función de aceleración
+        once: true, // si la animación debería ocurrir solo una vez
+    });
+    </script>
+
+</head>
+<body>
+    
+
+    <div class="container-fluid sticky-top bg-dark">
+        <div class="row">
+            <div class="col-1">
+                <a href="../index.html"><img src="../img/logo.png" class="img-fluid mt-2"></a>
+            </div>
+            <div class="col-11 my-2">
+                <div class="btn-group mx-1">
+                    <button type="button" class="btn dropdown-toggle text-white float-left" data-toggle="dropdown">Descubre</button>
+                    <div class="dropdown-menu">
+                        <button type="button" class="dropdown-item"><a href="pagina2.html" class="text-dark">Naturaleza</a></button>
+                        <button type="button" class="dropdown-item"><A  href="pagina3.html" class="text-dark">Cultura</A></button>
+                        <button type="button" class="dropdown-item">Gastronomía</button>
+                        <button type="button" class="dropdown-item">Costas y Pueblos Marineros</button>
+                        <button type="button" class="dropdown-item">Ciudades de Asturias</button>
+                        <button type="button" class="dropdown-item">Turismo Rural</button>
+                    </div>
+                </div>
+                <button type="button float-left" class="btn text-white mx-1 dropdown-toggle">Organiza tu viaje</button>
+                <button type="button float-left" class="btn text-white mx-1 dropdown-toggle">Agenda</button>
+                <button type="button float-left" class="btn text-white mx-1 dropdown-toggle">Blog</button>
+                <button type="button float-left" class="btn text-white mx-1">Profesionales</button>
+            </div>   
+        </div>
+    </div>
+    <div class="container-fluid">
+
+        
+        <div class="row">
+            <div class="carousel slide" data-ride="carousel" id="asturias">
+                <!--indicadores-->
+                <ul class="carousel-indicators">
+                    <li data-target="#asturias" data-slide-to="0"></li>
+                    <li data-target="#asturias" data-slide-to="1"></li>
+                    <li data-target="#asturias" data-slide-to="2"></li>
+                </ul>
+
+                <!--imagenes-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/asturias-puente-de-cangas-de-onis_58cbd78f_2000x1333.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/home-rural.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/3.jpg" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+
+                <!--controles-->
+                <a href="#asturias" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#asturias" class="carousel-control-next" data-slide="prev">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+
+            </div>
+
+          
+        </div>
+        <div class="row">
+            <p id="ast" class="maintitle">ASTURIAS</p>
+            <p class="paraiso">  Vuelve al Paraíso  </p>
+        </div>
+        
+    </div>
+
+
+
+    <div class="container my-5">
+
+        <div class="row">
+            <div class="col">
+               <h2 class="text-center text-success" >LAS MEJORES IDEAS PARA VOLVER A ASTURIAS</h2> 
+            </div> 
+        </div>
+
+        <hr class="bg-success" size="5"> 
+
+        <div class="row my-3">
+            <div class="d-none d-md-block col-md-4">
+                <div class="card cardEspecial1"   >
+                    <div class="card-header bg-success">
+                        <h4 class="text-center">MONTAÑA</h4>
+                    </div>
+                    <img src="../img/montaña.jpg" alt="">
+                    <div class="card-body text-center">
+                        Lugares que deslumbran en el oriente de Asturias.
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class=" btn bg-warning">
+                            + INFO
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card">
+                    <div class="card-header bg-success">
+                        <h4 class="text-center">PRERROMÁNICO</h4>
+                    </div>
+                    <img src="../img/prerromanico.jpg" alt="">
+                    <div class="card-body text-center">
+                        Sitios que te sorprenderán en el centro de Asturias.
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class=" btn bg-warning">
+                            + INFO
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card cardEspecial2 fade-in-down">
+                    <div class="card-header bg-success">
+                        <h4 class="text-center">ACTIVIDADES</h4>
+                    </div>
+                    <img src="../img/actividades.jpg" alt="">
+                    <div class="card-body text-center">
+                        Aventura para todos los gustos.
+                        <br><br>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class=" btn bg-warning">
+                            + INFO
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-6 col-md-4">
+                <div class="card cardEspecial1">
+                    <div class="card-header bg-success">
+                        <h4 class="text-center">PUEBLOS</h4>
+                    </div>
+                    <img src="../img/pueblos.jpg" alt="">
+                    <div class="card-body text-center">
+                        Pueblos para enamorarte de Asturias.
+                        <br><br>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class=" btn bg-warning">
+                            + INFO
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card">
+                    <div class="card-header bg-success">
+                        <h4 class="text-center">BOSQUES</h4>
+                    </div>
+                    <img src="../img/bosques.jpg" alt="">
+                    <div class="card-body text-center">
+                        Rutas fascinantes por los bosques de Asturias.
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class=" btn bg-warning">
+                            + INFO
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-4">
+                <div class="card cardEspecial2">
+                    <div class="card-header bg-success">
+                        <h4 class="text-center">MUSEOS</h4>
+                    </div>
+                    <img src="../img/museos.jpg" alt="">
+                    <div class="card-body text-center">
+                        Museos que son toda una sorpresa.
+                        <br><br>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class=" btn bg-warning">
+                            + INFO
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+ 
+    <div class="row" style="height: 100px"></div>
+
+
+
+    <div class="container-fluid fixed-bottom mt-5 bg-success p-1">
+        <div class="row">
+
+        <div class="d-none d-md-block col-md-6">
+            <ul class="breadcrumb float-left ">
+                <li class="breadcrumb-item">
+                    <a href="pagina3.html">MONTAÑA</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">MAR</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="pagina4.html">PRERROMÁNICO</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">PUEBLOS</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="pagina2.html">RUTAS</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <ul class="pagination pagination-sm float-right">
+                <li class="page-item"><a href="../index.html" class="page-link">PREV</a></li>
+                <li class="page-item"><a href="../index.html" class="page-link">1</a></li>
+                <li class="page-item active"><a href="#" class="page-link">2</a></li>
+                <li class="page-item "><a href="pagina3.html" class="page-link">3</a></li>
+                <li class="page-item "><a href="pagina4.html" class="page-link">4</a></li>
+                <li class="page-item "><a href="pagina3.html" class="page-link">NEXT</a></li>
+            </ul>
+        </div>
+    
+        
+
+        </div>
+    </div>
+    
+
+        
+
+  
+</body>
+</html>
