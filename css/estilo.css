@@ -16,6 +16,9 @@
     left: 37%;
 }
 
+.text-justificado{
+  text-align: justify;
+}
 .maintitleMovil{
   font-family: 'maintitle';
   color: white;
