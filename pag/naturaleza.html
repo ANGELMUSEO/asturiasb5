@@ -10,20 +10,169 @@
     <link rel="stylesheet" href="../css/estilo.css">
      <!--ICONOS FONT-AWESOME-->
      <link rel="stylesheet" href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+     <!-- Place favicon.ico in the root directory -->
+ 
+     <!-- Web Font -->
+     <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+ 
+     <!-- ========================= CSS here ========================= -->
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+     <link rel="stylesheet" href="assets/css/animate.css" />
+     <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+     <link rel="stylesheet" href="assets/css/main.css" />
+     <link rel="stylesheet" href="assets/css/reset.css" />
+     <link rel="stylesheet" href="assets/css/responsive.css" />
+     
+     
      <script src="https://kit.fontawesome.com/9db6ef170f.js" crossorigin="anonymous"></script>
 
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/script.js"></script>
+
+    
+    <!-- ========================= JS here ========================= -->
+    
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        //========= glightbox
+        GLightbox({
+            'href': 'https://www.youtube.com/watch?v=BqI0Q7e4kbk&t=1s',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
+
+        //====== Clients Logo Slider
+        tns({
+            container: '.client-logo-carousel',
+            slideBy: 'page',
+            autoplay: true,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            gutter: 15,
+            nav: false,
+            controls: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                540: {
+                    items: 2,
+                },
+                768: {
+                    items: 3,
+                },
+                992: {
+                    items: 4,
+                },
+                1170: {
+                    items: 6,
+                }
+            }
+        });
+
+        //======== Home Slider
+        var slider = new tns({
+            container: '.home-slider',
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            items: 1,
+            nav: true,
+            controls: false,
+            controlsText: [
+                '<i class="lni lni-arrow-left prev"></i>',
+                '<i class="lni lni-arrow-right next"></i>'
+            ],
+            responsive: {
+                1200: {
+                    items: 1,
+                },
+                992: {
+                    items: 1,
+                },
+                0: {
+                    items: 1,
+                }
+
+            }
+        });
+
+        //======== Testimonial Slider
+        var slider = new tns({
+            container: '.testimonial-slider',
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            items: 1,
+            nav: true,
+            controls: false,
+            controlsText: [
+                '<i class="lni lni-arrow-left prev"></i>',
+                '<i class="lni lni-arrow-right next"></i>'
+            ],
+            responsive: {
+                1200: {
+                    items: 2,
+                },
+                992: {
+                    items: 1,
+                },
+                0: {
+                    items: 1,
+                }
+
+            }
+        });
+
+        //============== isotope masonry js with imagesloaded
+        imagesLoaded('#container', function () {
+            var elem = document.querySelector('.grid');
+            var iso = new Isotope(elem, {
+                // options
+                itemSelector: '.grid-item',
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: '.grid-item'
+                }
+            });
+
+            let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
+            filterButtons.forEach(e =>
+                e.addEventListener('click', () => {
+
+                    let filterValue = event.target.getAttribute('data-filter');
+                    iso.arrange({
+                        filter: filterValue
+                    });
+                })
+            );
+        });
+    </script>
 </head>
 <body>
     
 
-    <div class="container-fluid sticky-top bg-dark">
+    <div class="container-fluid sticky-top ">
         <!--nueva barra con boton movil-->
         <div class="row">            
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fw-bold">
+            <nav class="navbar navbar-expand-sm bg-degradado  fw-bold">
                 <div class="container-fluid">
-                 <a class="navbar-brand" href="#"><img src="../img/logo.png" width="60px"></a>
+                 <a class="navbar-brand" href="../index.html"><img src="../img/ARCO blanco.png" ></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -33,13 +182,19 @@
                           DESCUBRE
                         </button>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="pagina2.html">CULTURA</a></li>
-                          <li><a class="dropdown-item" href="pagina3.html">INFORMACION</a></li>
-                          <li><a class="dropdown-item" href="pagina4.html">Gastronomia</a></li>
+                          <li><a class="dropdown-item" href="pagina2.html">PARQUE OESTE</a></li>
+                          <li><a class="dropdown-item" href="pagina3.html">PARQUE INVIERNO</a></li>
+                          <li><a class="dropdown-item" href="pagina4.html">PURIFICACION TOMAS</a></li>
                         </ul>
                       </div>
-                    <ul class="navbar-nav me-auto">
-                      <li class="nav-item text-white">
+                    <ul class="navbar-nav me-auto text-white fw-bold">
+                        <li class="nav-item text-primary">
+                            <a class="nav-link" href="#">PARQUE SAN FRANCISCO</a>
+                          </li>
+                          <li class="nav-item text-primary">
+                            <a class="nav-link" href="#">&nbsp;&nbsp;&nbsp;</a>
+                          </li>
+                      <li class="nav-item ">
                         <a class="nav-link" href="#">NATURALEZA</a>
                       </li>
                       <li class="nav-item">
@@ -149,14 +304,14 @@
                             <!-- carrusel -->
                             <div class="carousel-inner">
                                  <div class="carousel-item active">
-                                <a href="pag/pagina2.html"><img src="../img/asturias-puente-de-cangas-de-onis_58cbd78f_2000x1333.jpg" class="img-fluid" alt=""></a>
+                                <a href="pag/pagina2.html"><img src="../img/bannerSanFrancisco/sfa-1.jpg" class="img-fluid" alt=""></a>
                   
                                 </div>
                             <div class="carousel-item">
-                                <img src="../img/home-rural.jpg" class="img-fluid" alt="">
+                                <img src="../img/bannerSanFrancisco/sfa-2.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/3.jpg" class="img-fluid" alt="">
+                                <img src="../img/bannerSanFrancisco/sfa-3.jpg" class="img-fluid" alt="">
                             </div>
                             </div>
                         
@@ -179,15 +334,15 @@
        <!--titulo adapatado movil y ordenador-->
         <div class="row ">
             <div class="col-12 d-none d-md-block">
-                <p id="ast" class="maintitle">ASTURIAS</p>
-                <p class="paraiso">  Vuelve al Paraíso  </p>
+                <p id="ast" class="maintitle  ">OVIEDO</p>
+                <p class="paraiso  ">  Origen del Camino  </p>
             </div>
           
         </div>
         <div class="row ">
-            <div class="col-12 d-md-none">
-                <p id="ast" class="maintitleMovil">ASTURIAS</p>
-                <p class="paraisoMovil">  Vuelve al Paraíso  </p>
+            <div class="col-12 d-md-none text-degradado">
+                <p id="ast" class="maintitleMovil  ">Oviedo</p>
+                <p class="paraisoMovil  ">  Origen del Camino  </p>
             </div>
         </div>
     </div>
@@ -198,10 +353,137 @@
     <!--comienzo bloque-->
     <div class="row">
         <div class="col-12">
-           <h2 class="text-center text-white bg-degradado display-5 mt-5">PLAYAS ASTURIANAS</h2> 
+           <h2 class="text-center text-white bg-degradado display-5 mt-5">PARQUE SAN FRANCISCO</h2> 
         </div> 
     </div>
 
+        <!-- Start Features Area -->
+    <section class="Features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="feature-right wow fadeInUp" data-wow-delay=".3s">
+                        <div class="watch-inner">
+                            <div class="video-head wow zoomIn" data-wow-delay="0.4s">
+                                <a href="../multimedia/Video San Francisco - 1.mp4" target="_blank" class=" glightbox video "><i
+                                        class="lni lni-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="feature-content">
+                        <div class="title">
+                            <span class="wow fadeInRight" data-wow-delay=".3s">Información General </span>
+                            <h3 class="wow fadeInRight" data-wow-delay=".5s">SAN FRANCISCO<br> Centro Ciudad</h3>
+                        </div>
+                        <div class="feature-item wow fadeInUp" data-wow-delay=".5s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-bar-chart"></i>
+                            </div>
+                            <div class="banner-content">
+                                <h2 class="title">Naturaleza</h2>
+                                <p>Lorem ipsum dolor sit amet, diam felis maecenas lectus ac, volutpat arcu, urna ac.
+                                    Vivamus dignissim sapien amet vivamu</p>
+                            </div>
+                        </div>
+                        <div class="feature-item wow fadeInUp" data-wow-delay=".6s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-checkmark-circle"></i>
+                            </div>
+                            <div class="banner-content">
+                                <h2 class="title">Esculturas</h2>
+                                <p>Lorem ipsum dolor sit amet, diam felis maecenas lectus ac, volutpat arcu, urna ac.
+                                    Vivamus dignissim sapien amet vivamu</p>
+                            </div>
+                        </div>
+                        <div class="feature-item wow fadeInUp" data-wow-delay=".7s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-support"></i>
+                            </div>
+                            <div class="banner-content">
+                                <h2 class="title">Espacios Deportivos</h2>
+                                <p>Lorem ipsum dolor sit amet, diam felis maecenas lectus ac, volutpat arcu, urna ac.
+                                    Vivamus dignissim sapien amet vivamu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="container-fluid">
+    <div class="row mt-4">
+        <img src="../img/covid 19.jpg" class="my-4 img-fluid imagenCovid  filtro-azulado" alt="">
+        
+    </div>
+ 
+</div>
+
+<!--seccion central-->
+<section class="services section">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service wow fadeInUp" data-wow-delay=".2s">
+                    <div class="serial">
+                        <span><i class="lni lni-code"></i></span>
+                    </div>
+                    <h3><a href="service-single.html">NATURALEZA</a></h3>
+                    <p>Need A Project Completed By An Expert? Let’s Go! Access A Human Resources Consultant To Answer Questions</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service wow fadeInUp" data-wow-delay=".3s">
+                    <div class="serial">
+                        <span><i class="lni lni-vector"></i></span>
+                    </div>
+                    <h3><a href="service-single.html">DEPORTES</a></h3>
+                    <p>Need A Project Completed By An Expert? Let’s Go! Access A Human Resources Consultant To Answer Questions</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service wow fadeInUp" data-wow-delay=".4s">
+                    <div class="serial">
+                        <span><i class="lni lni-ux"></i></span>
+                    </div>
+                    <h3><a href="service-single.html">BIENESTAR</a></h3>
+                    <p>Need A Project Completed By An Expert? Let’s Go! Access A Human Resources Consultant To Answer Questions</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service wow fadeInUp" data-wow-delay=".5s">
+                    <div class="serial">
+                        <span><i class="lni lni-keyword-research"></i></span>
+                    </div>
+                    <h3><a href="service-single.html">EDIFICIOS</a></h3>
+                    <p>Need A Project Completed By An Expert? Let’s Go! Access A Human Resources Consultant To Answer Questions</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service wow fadeInUp" data-wow-delay=".6s">
+                    <div class="serial">
+                        <span><i class="lni lni-seo"></i></span>
+                    </div>
+                    <h3><a href="service-single.html">ESCULTURAS</a></h3>
+                    <p>Need A Project Completed By An Expert? Let’s Go! Access A Human Resources Consultant To Answer Questions</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-service wow fadeInUp" data-wow-delay=".7s">
+                    <div class="serial">
+                        <span><i class="lni lni-bar-chart"></i></span>
+                    </div>
+                    <h3><a href="service-single.html">FUENTES</a></h3>
+                    <p>Need A Project Completed By An Expert? Let’s Go! Access A Human Resources Consultant To Answer Questions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- End Features Area -->
 <!--fin bloque-->
 </div>
 
@@ -209,5 +491,8 @@
 
 
 <!--fin bloque-->
+
+<!-- scripts plantilla-->
+ 
 </body>
 </html>
